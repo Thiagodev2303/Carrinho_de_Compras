@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUTHITECH</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav id="menu-h">
+        <ul>
+
+            <li>
+                <strong>LUTHITECH</strong>
+            </li>
+            
+            <li>
+                <a href="index.html"><strong>Login</strong></a>
+            </li>
+            
+            <li>
+                <a href="carrinhocompras.html"><strong>Carrinho de Compras</strong></a>
+            </li>
+        
+            <li>
+                <a href="profissionais.html"><strong>Pagamento</strong></a>
+            </li>
+           
+        </ul>
+    </nav>
+
+</header>
+<form id="payment-form">
+  <form>
+    
+    <label for="nome-cartao"><strong>Nome no cartão:</strong></label>
+    <input type="text" id="nome-cartao" name="nome-cartao" style="border: none; border-radius: 6px; font-size: 15px; font-weight: bold;" required>
+    
+    <br>
+    
+    <br>
+
+    <label for="numero-cartao"><strong>Número do cartão:</strong></label>
+    <input type="text" id="numero-cartao" name="numero-cartao" required>
+    
+    <br>
+    
+    <br>
+
+    <label for="validade-cartao"><strong>Validade:</strong></label>
+    <input type="month" id="validade-cartao" name="validade-cartao" required>
+    
+    <br>
+    
+    <br>
+
+    <label for="cvv-cartao"><strong>CVV:</strong></label>
+    <input type="text" id="cvv-cartao" name="cvv-cartao" required>
+    
+    <br>
+    
+    <br>
+
+    <label for="tipo-pagamento"><strong>Tipo de pagamento:</strong></label>
+    
+    <select id="tipo-pagamento" name="tipo-pagamento" required>
+      
+        <option value="">Selecione o tipo de pagamento</option>
+      
+      <option value="cartao-credito">Cartão de crédito</option>
+      
+      <option value="cartao-debito">Cartão de débito</option>
+    
+    </select>
+    
+    <br>
+
+    <br>
+
+    <div id="dados-pix" class="dados-pagamento">
+      <label for="chave-pix"><strong>Chave PIX:2433388949</strong></label>
+    </div>
+    
+    <br>
+
+    <div id="dados-boleto" class="dados-pagamento">
+      <label for="linha-digitavel"><strong>Boleto:30003023939103931039</strong></label>
+    </div>
+    
+    <button style="background: rgb(53, 53, 129); border-radius: 6px; padding: 15px; cursor: pointer; color: white; border: none; font-size: 16px; margin: 2% ">Finalizar Compra</button>
+  </form>
+
+</form>
+
+    <script src="pagamento.js"></script>
+</body>
+</html>

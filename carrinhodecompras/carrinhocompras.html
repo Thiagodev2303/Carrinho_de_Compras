@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUTHITECH</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav id="menu-h">
+        <ul>
+
+            <li>
+                <strong>LUTHITECH</strong>
+            </li>
+            
+            <li>
+                <a href="index.html"><strong>Login</strong></a>
+            </li>
+            
+            <li>
+                <a href="carrinhocompras.html"><strong>Carrinho de Compras</strong></a>
+            </li>
+        
+            <li>
+                <a href="profissionais.html"><strong>Pagamento</strong></a>
+            </li>
+           
+        </ul>
+    </nav>
+
+    <table>
+        <thead>
+            <tr>
+                <th> Produtos</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <h4>Mouse</h4>
+                    <img src="img/mouse-gamer-rgb-7-botoes-7200-dpis-letron-74315--1.png" alt="mouse gamer" onMouseOver="mouse1(this);" onMouseOut="mouse2(this)">
+                    <br>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="1" maxlength="1" value="1" style="border: none; border-radius: 6px; font-size: 15px; font-weight: bold;" required> <strong>R$99,90.</strong>
+                </td>
+                <td>
+                    <h4>Mousepad</h4>
+                    <img src="img/mousepad-gamer-redragon-flick-p031-l_111516.png" alt="Mousepad" onMouseOver="mousepad1(this);" onMouseOut="mousepad2(this)">
+                    <br>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="1" maxlength="1" value="1" style="border: none; border-radius: 6px; font-size: 15px; font-weight: bold;" required> <strong>R$70,00.</strong>
+                </td>
+                <td>
+                    <h4>Teclado</h4>
+                    <img src="img/teclado_one_hand.png" alt="Teclado" onMouseOver="teclado1(this);" onMouseOut="teclado2(this)">
+                    <br>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="1" maxlength="1" value="1" style="border: none; border-radius: 6px; font-size: 15px; font-weight: bold;" required> <strong>R$270,00.</strong>
+                </td>
+                <td>
+                    <h4>Headset</h4>
+                    <img src="img/headset.png" alt="Headset" onMouseOver="headset1(this);" onMouseOut="headset2(this)">
+                    <br>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="1" maxlength="1" value="1" style="border: none; border-radius: 6px; font-size: 15px; font-weight: bold;" required> <strong>R$950,00.</strong>
+                </td>
+                <td>
+                    <h4>Webcam</h4>
+                    <img src="img/webcam1.png" alt="Webcam" onMouseOver="webcam1(this);" onMouseOut="webcam2(this)">
+                    <br>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="1" maxlength="1" value="1" style="border: none; border-radius: 6px; font-size: 15px; font-weight: bold;" required> <strong>R$130,00.</strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <form>
+        <label for="cep1"><strong>Informe o CEP da sua cidade:</strong></label>
+        <input type="text" id="cep1" name="cep1"  pattern="[0-9]" maxlength="5" size="8" style="border-radius: 6px; font-size: 15px; border: none; font-weight: bold;" required>
+      
+        <label for="cep2"><strong>-</strong></label>
+        <input type="text" id="cep2" name="cep2"  pattern="[0-9]" maxlength="3" size="5" style="border-radius: 6px; font-size: 15px; border: none; font-weight: bold;" required>
+      
+        <button type="button" id="calcular-frete" style="border-radius: 6px; font-size: 14px; width: 150px; height: 30px; background: rgb(53, 53, 129); color: white; border: none; font-weight: bold;"><strong>Calcular frete</strong></button>
+      </form>
+      <div id="resultado"></div>
+
+      <p><strong>VALOR TOTAL</strong></p>
+      <p><strong>R$1619,90 + Frete incluso</strong></p>
+
+      <a href="pagamento.html"><button style="background: rgb(53, 53, 129); border-radius: 6px; padding: 15px; cursor: pointer; color: white; border: none; font-size: 16px; margin: 2% ">Prosseguir para o pagamento</button></a>
+
+      <script src="carrinho.js"></script>
+
+</body>
+</html>
